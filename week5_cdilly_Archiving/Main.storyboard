@@ -23,7 +23,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuo-OR-Lae">
-                                <rect key="frame" x="36" y="195" width="121" height="30"/>
+                                <rect key="frame" x="25" y="169" width="121" height="30"/>
                                 <color key="backgroundColor" red="0.54509806630000002" green="0.95294123890000004" blue="0.13725490870000001" alpha="1" colorSpace="deviceRGB"/>
                                 <state key="normal" title="Add/Update">
                                     <color key="titleColor" red="0.011764707040000001" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
@@ -31,17 +31,6 @@
                                 </state>
                                 <connections>
                                     <action selector="addNote:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZKx-3Y-TMy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Snd-ac-mwI">
-                                <rect key="frame" x="211" y="195" width="129" height="30"/>
-                                <color key="backgroundColor" red="0.94117653369999998" green="0.12549020350000001" blue="0.054901964960000001" alpha="1" colorSpace="deviceRGB"/>
-                                <state key="normal" title="Delete">
-                                    <color key="titleColor" red="0.039215687659999998" green="0.062745101750000004" blue="0.082352943720000002" alpha="1" colorSpace="deviceRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="deleteNote:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TLY-pN-GcS"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c3b-7p-B49">
@@ -68,6 +57,28 @@
                                 </state>
                                 <connections>
                                     <segue destination="wbh-16-Ndb" kind="presentation" id="gFP-3o-Aj1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLH-uG-kLh">
+                                <rect key="frame" x="119" y="230" width="126" height="27"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Clear Note">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearNote:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="juk-Z5-jrl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Snd-ac-mwI">
+                                <rect key="frame" x="211" y="169" width="129" height="30"/>
+                                <color key="backgroundColor" red="0.94117653369999998" green="0.12549020350000001" blue="0.054901964960000001" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="Delete">
+                                    <color key="titleColor" red="0.039215687659999998" green="0.062745101750000004" blue="0.082352943720000002" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteNote:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TLY-pN-GcS"/>
                                 </connections>
                             </button>
                         </subviews>

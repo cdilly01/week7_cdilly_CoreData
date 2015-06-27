@@ -76,6 +76,11 @@ NoteSvcCoreData *noteSvcCoreData = nil;
     return [[noteSvcCoreData retrieveAllNotes] count];
 }
 
+// Clear the note field
+- (IBAction)clearNote:(id)sender {
+    _noteInputText.text = @"";
+}
+
 // Return the table cell for a paricular row (index)
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *simpleTableIdentifier = @"SimpleTableItem";

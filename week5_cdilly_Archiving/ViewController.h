@@ -19,6 +19,8 @@
 - (NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section;
 
+- (IBAction)clearNote:(id)sender;
+
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
